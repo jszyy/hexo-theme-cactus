@@ -13,12 +13,19 @@ direction: ltr
 # A pair 'Key: url' will result in a link to 'url' with the name 'Key' in the
 # navigation menu. Optionally, you can add translations for the 'Key' in
 # languages/*.yml
-nav:
-  home: /
-  about: /about/
-  articles: /archives/
-  projects: http://github.com/probberechts
-
+# nav:
+#   home: /
+#   about: /about/
+#   articles: /archives/
+#   projects: http://github.com/probberechts
+nav: 
+  首页: /
+  归档: /archives/
+  公共表达: /byTalk/
+  瞎说: /feeling/
+  # 分类: /categories
+  # 标签: /tags
+  搜索: /search/
 
 # Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names
@@ -26,41 +33,44 @@ nav:
 # only 'mail' is an exception.
 # You can optionally add a 'label' key to set the title attribute on the link. 
 # 'icon' value will be used as title when 'label' is missing.
-social_links:
-  -
-    icon: github
-    link: http://github.com/probberechts/cactus-dark
-  -
-    icon: twitter
-    link: /
-  -
-    icon: facebook
-    link: /
-  -
-    icon: mail
-    link: mailto:name@email.com
-  -
-    icon: mastodon
-    label: mastodon.social
-    link: https://mastodon.social/@alice
-  -
-    icon: mastodon
-    label: fosstodon.org
-    link: https://fosstodon.org/@alice
+# social_links:
+#   -
+#     icon: github
+#     link: http://github.com/probberechts/cactus-dark
+#   -
+#     icon: twitter
+#     link: /
+#   -
+#     icon: facebook
+#     link: /
+#   -
+#     icon: mail
+#     link: mailto:name@email.com
+#   -
+#     icon: mastodon
+#     label: mastodon.social
+#     link: https://mastodon.social/@alice
+#   -
+#     icon: mastodon
+#     label: fosstodon.org
+#     link: https://fosstodon.org/@alice
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
-tags_overview: false
+tags_overview: true
 
 # Customize the overview with the most recent blog posts on the index page.
 # Options:
 #   - show_all_posts: whether to show all available posts.
 #   - post_count: whether to show only the x most recent posts.
 #   - sort_updated: sort posts by last modification date instead of creation date.
-posts_overview:
+# posts_overview:
+#   show_all_posts: false
+#   post_count: 5
+#   sort_updated: false
+posts_overview: 
   show_all_posts: false
-  post_count: 5
-  sort_updated: false
+  post_count: 10
 
 # Customize the archive view.
 # Options:
@@ -79,7 +89,7 @@ post:
 # Customize the copyright years
 # Note: if start_year/end_year not provided, will use current year.
 copyright:
-  start_year: 2016
+  start_year: 2018
   end_year:
 
 # Customize the 404 page
@@ -168,9 +178,10 @@ mathjax:
   enabled: false
 
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
+# 评论功能
 disqus:
   enabled: false
-  shortname: cactus-1
+  shortname: disqus_8u09FNsM47
 
 # Fill in your Utterances data to enable Utterances comments
 utterances:
@@ -187,8 +198,8 @@ google_analytics:
 
 # Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
 baidu_analytics:
-  enabled: false
-  id: 2e6da3c375c8a87f5b664cea6d4cb29c
+  enabled: true
+  id: 9233b83248060396e1e1d93186743de8
 
 # Fill in your Cloudflare Analytics tracking ID to enable Cloudflare Analytics.
 cloudflare_analytics:
@@ -217,3 +228,7 @@ cdn:
   font_awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
   justified_gallery_css: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css
   justified_gallery_js: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js
+
+# 是否开启访问量统计功能(不蒜子)
+busuanzi:
+  enable: true
